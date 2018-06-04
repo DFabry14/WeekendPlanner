@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes){
-    var Event = sequelize.define("Event", {
+    var UserEvent = sequelize.define("UserEvent", {
         
     });
-    return Event
+    return UserEvent
 };
