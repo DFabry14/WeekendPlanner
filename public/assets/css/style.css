@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/Gotham-Book.otf')
+}
+body {
+    font-family: 'Gotham', sans-serif;
+}
+
+.slogan {
+    text-align: center;
+}
+.home-div {
+    margin: 0 auto;
+}
+
+/*HOMEPAGE SPLASH*/
+.form-control {
+    border-radius: .1rem;
+    border: none;
+    margin: 0 auto;
+}
+input {
+    height: 50px;
+    color: #aaa;
+}
+.col-3:first-child {
+    padding-left: 15px;
+}
+.col-3 {
+    padding-right: 2px;
+    padding-left: 0px;
+}
+.col-3:last-child {
+    padding-right: 15px;
+}
+.col-4 {
+    padding-left: 0px;
+    padding-right: 2px;
+}
+.col-1 {
+    padding-left: 0px;
+    padding-right: 2px;
+} 
+button {
+    width: 100%;
+    height: 50px;
+}
+.btn-primary {
+    border-radius: .1rem;
+}
