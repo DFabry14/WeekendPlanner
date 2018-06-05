@@ -45,6 +45,7 @@ header {
     height: 100vh;
     margin-bottom: 0px;
     padding-top: 20px;
+    border-radius: 0px;
 }
 .logo-big {
     text-align: center;
@@ -107,4 +108,9 @@ button {
     border: 0px;
     border-radius: .1rem;
     background-color: #4C4C70;
+}
+
+.btn-light {
+    border: 0px;
+    border-radius: .1rem;
 }
