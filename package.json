@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,14 @@
     "express-handlebars": "^3.0.0",
     "mysql2": "^1.5.3",
     "sequelize": "^4.37.10"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DFabry14/WeekendPlanner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DFabry14/WeekendPlanner/issues"
+  },
+  "homepage": "https://github.com/DFabry14/WeekendPlanner#readme"
 }

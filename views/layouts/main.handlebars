@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Venture</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <header>
+                <div class="logo">BLAH</div>
+                <nav>
+                    <a href="#">Login</a>
+                </nav>
+            </header>
+
+            <div class="home-div col-md-12">
+
+                <div class="slogan">
+                    <h1>Plan your next adventure.</h1>
+                </div>
+                <div class="search-inputs">
+                    <div class="day-links">
+                        <a href="#">One Day</a>
+                        <a href="#">Multiple Days</a>
+                    </div>
+                    <form action="/action_page">
+                        <div class="form-group row">
+                            <div class="col-3">
+                                <input class="form-control input-lg city" id="inputlg city" placeholder="Where?" type="text">
+                            </div>
+                            <div class="col-4">
+                                <input class="form-control input-lg event" id="inputlg event" placeholder="What do you want to do?" type="text">
+                            </div>
+                            <div class="col-1">
+                                <input class="form-control input-lg" id="inputlg day-start" placeholder="Jul 3" type="text">
+                            </div>
+                            <div class="col-1">
+                                <input class="form-control input-lg" id="inputlg day-end" placeholder="Jul 6" type="text">
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-primary">Plan It</button>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="eventDisplay">
+
+        {{{ body }}}
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

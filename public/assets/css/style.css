@@ -48,3 +48,8 @@ button {
 .btn-primary {
     border-radius: .1rem;
 }
+#saveBtn {
+    width: 300px;
+    margin: auto;
+    
+}
