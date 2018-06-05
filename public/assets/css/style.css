@@ -2,18 +2,73 @@
     font-family: 'Gotham Book';
     src: url('../fonts/Gotham-Book.otf')
 }
+@font-face {
+    font-family: 'Gotham X Light';
+    src: url('../fonts/Gotham-XLight.otf');
+}
 body {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham Book', sans-serif;
+}
+h1, h5 {
+    color: #fff;
+}
+h5 {
+    font-family: 'Gotham X Light', sans-serif;
 }
 
+/*****HEADER-NAV******/
+header {
+}
+.header-nav {
+    display: inline-block;
+}
+.planit-logo {
+    height: 50px;
+    margin: 0px 0px 0px 50px;
+}
+.login {
+    float: right;
+    margin: 0px 50px 0px 0px;
+}
+.login img {
+    height: 20px;
+}
+.login a {
+    color: #fff;
+}
+
+/*****JUMBOTRON*****/
+.jumbotron {
+    /* background: #3E3E63; */
+    background: url('../img/splash1.jpeg') no-repeat fixed;
+    background-size: 100%;
+    height: 100vh;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+.logo-big {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.logo-big img {
+    height: 100px;
+}
 .slogan {
     text-align: center;
+    margin-bottom: 100px;
+}
+.day-links {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.day-links a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
 }
 .home-div {
     margin: 0 auto;
 }
-
-/*HOMEPAGE SPLASH*/
 .form-control {
     border-radius: .1rem;
     border: none;
@@ -46,5 +101,7 @@ button {
     height: 50px;
 }
 .btn-primary {
+    border: 0px;
     border-radius: .1rem;
+    background-color: #4C4C70;
 }
