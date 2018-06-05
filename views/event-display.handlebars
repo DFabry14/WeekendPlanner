@@ -1,47 +1,74 @@
 <div class="eventContainer">
 
-    <h1>Events in your area:</h1>
+    <br>
+    <br>
+    <h1 class="eventHead">Events in your area:</h1>
 
-    <div class="eventOptions">
-        <div class="col-md-3 eventList">
-            <h3>Friday</h3>
-            <ul>
-                {{#each userEventFri}} {{#unless this.chosen}}
+    <div class="col-md-12 eventOptions">
+        <div class="col-md-4 eventList">
+            <h3 class="friday days">Friday</h3>
+            <ul style="list-style-type:none">
+                {{!-- {{#each userEventFri}} {{#unless this.chosen}} --}}
                 <li>
-
+                    <div class="card">
+                        <div class="card-header">
+                            EVENT NAME
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Concert at The Metro</p>
+                        </div>
+                    </div>
                     <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
                 </li>
-                {{/unless}} {{/each}}
+                {{!-- {{/unless}} {{/each}} --}}
             </ul>
         </div>
-        <div class="col-md-3 eventList">
-            <h3>Saturday</h3>
-            <ul>
-                {{#each userEventSat}} {{#unless this.chosen}}
+        <div class="col-md-4 eventList">
+            <h3 class="days">Saturday</h3>
+            <ul style="list-style-type:none">
+                {{!-- {{#each userEventSat}} {{#unless this.chosen}}  --}}
                 <li>
-
+                    <div class="card">
+                        <div class="card-header">
+                            EVENT NAME
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Concert at The Metro</p>
+                        </div>
+                    </div>
                     <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
                 </li>
-                {{/unless}} {{/each}}
+                {{!-- {{/unless}} {{/each}} --}}
             </ul>
         </div>
-        <div class="col-md-3 eventList">
-            <h3>Sunday</h3>
-            <ul>
-                {{#each userEventSun}} {{#unless this.chosen}}
+        <div class="col-md-4 eventList">
+            <h3 class="days">Sunday</h3>
+            <ul style="list-style-type:none">
+                {{!-- {{#each userEventSun}} {{#unless this.chosen}}  --}}
                 <li>
-
+                    <div class="card">
+                        <div class="card-header">
+                            EVENT NAME
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Concert at The Metro</p>
+                        </div>
+                    </div>
                     <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
                 </li>
-                {{/unless}} {{/each}}
+                {{!-- {{/unless}} {{/each}} --}}
             </ul>
         </div>
     </div>
-
-    <div class="eventSchedule">
-        <h3>Your schedule:</h3>
-        <div class="col-md-3 eventList">
-            <ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h3 class="col-md-12 scheduleHead">Your schedule:</h3>
+        <div class="col-md-4 eventList friday">
+            <h3 class="friday days">Friday</h3>
+            <ul style="list-style-type:none">
                 {{#each selectedEventFri}}
                 <li>
 
@@ -49,8 +76,9 @@
                 {{/each}}
             </ul>
         </div>
-        <div class="col-md-3 eventList">
-            <ul>
+        <div class="col-md-4 eventList">
+            <h3 class="days">Saturday</h3>
+            <ul style="list-style-type:none">
                 {{#each selectedEventSat}}
                 <li>
 
@@ -58,8 +86,9 @@
                 {{/each}}
             </ul>
         </div>
-        <div class="col-md-3 eventList">
-            <ul>
+        <div class="col-md-4 eventList">
+            <h3 class="days">Sunday</h3>
+            <ul style="list-style-type:none">
                 {{#each selectedEventSun}}
                 <li>
 
@@ -67,8 +96,9 @@
                 {{/each}}
             </ul>
         </div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg btn-block saveBtn" id="saveActivities">Save Activities!</button>
     </div>
-
-    <button type="button" class="btn btn-primary btn-lg btn-block saveBtn" id="saveActivities">Save Activities!</button>
 
 </div>
