@@ -44,6 +44,7 @@ h5 {
     height: 600px;
     margin-bottom: 0px;
     padding-top: 20px;
+    border-radius: 0px;
 }
 .logo-big {
     text-align: center;
@@ -108,6 +109,22 @@ button {
     background-color: #4C4C70;
 }
 
+.btn-light {
+    border: 0px;
+    border-radius: .1rem;
+}
+
+/*DATEPICKER/CALENDAR*/
+.datepicker-1 {
+    width: 300px;
+}
+.ui-corner-all {
+    border: none;
+    border-radius: 0px;
+}
+.ui-widget-header {
+    background: #4C4C70;
+}
 /****** Event list ******/
 
 .events {
