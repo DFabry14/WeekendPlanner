@@ -1,0 +1,74 @@
+<div class="eventContainer">
+
+    <h1>Events in your area:</h1>
+
+    <div class="eventOptions">
+        <div class="col-md-3 eventList">
+            <h3>Friday</h3>
+            <ul>
+                {{#each userEventFri}} {{#unless this.chosen}}
+                <li>
+
+                    <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
+                </li>
+                {{/unless}} {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-3 eventList">
+            <h3>Saturday</h3>
+            <ul>
+                {{#each userEventSat}} {{#unless this.chosen}}
+                <li>
+
+                    <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
+                </li>
+                {{/unless}} {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-3 eventList">
+            <h3>Sunday</h3>
+            <ul>
+                {{#each userEventSun}} {{#unless this.chosen}}
+                <li>
+
+                    <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
+                </li>
+                {{/unless}} {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="eventSchedule">
+        <h3>Your schedule:</h3>
+        <div class="col-md-3 eventList">
+            <ul>
+                {{#each selectedEventFri}}
+                <li>
+
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-3 eventList">
+            <ul>
+                {{#each selectedEventSat}}
+                <li>
+
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-3 eventList">
+            <ul>
+                {{#each selectedEventSun}}
+                <li>
+
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary btn-lg btn-block saveBtn" id="saveActivities">Save Activities!</button>
+
+</div>
