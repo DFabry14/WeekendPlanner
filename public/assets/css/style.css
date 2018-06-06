@@ -16,7 +16,7 @@ h5 {
     font-family: 'Gotham X Light', sans-serif;
 }
 
-/***** HEader & Nav ******/
+/***** Header & Nav ******/
 
 .header-nav {
     display: inline-block;
@@ -35,6 +35,18 @@ h5 {
 .login a {
     color: #fff;
     text-decoration: none;
+}
+
+/***** Modal *****/
+.modal-header .close {
+    width: 50px;
+}
+.modal-body input {
+    display: block;
+    width: 100%;
+}
+.modal-footer button {
+    display: block;
 }
 
 /***** Jumbotron *****/
