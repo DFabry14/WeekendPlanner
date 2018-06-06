@@ -133,6 +133,7 @@ button {
 .events {
     background-color: #fff;
 }
+
 .eventList {
     float: left;
     color: #000;
@@ -172,6 +173,7 @@ button {
     text-align: center;
 }
 
+
 .btn-danger {
     border-radius: .1rem;
 }
@@ -182,4 +184,21 @@ button {
 
 .saveButton button {
     margin: 0 auto;
+}
+
+/***** Saved Events ******/
+
+.linkContainer {
+    background-color: #5C5E33;
+}
+
+.savedList {
+    float: left;
+    background-color: #5C5E33;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.eventOptions {
+    background-color: #5C5E33;
 }
