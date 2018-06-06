@@ -130,13 +130,18 @@ button {
 /****** Datepicker ******/
 .datepicker-1 {
     width: 300px;
+    position: absolute;
+    left: -100px;
 }
 .ui-corner-all {
     border: none;
     border-radius: 0px;
 }
 .ui-widget-header {
-    background: #4C4C70;
+    background: #fff;
+}
+.ui-datepicker-prev .ui-icon {
+    background-image: url('../img/arrow-next.png');
 }
 
 

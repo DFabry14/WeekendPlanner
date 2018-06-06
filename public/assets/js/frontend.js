@@ -15,9 +15,8 @@ $(document).ready(function() {
   dayStartBtn.on("click", function () {
     // Calendar shows up to default day
     console.log("clicked!");
-    datePicker1.slideDown("fast");
-    datePicker1.datepicker("show");
-  
+    datePicker1.toggle( "fast", function() {
+    });
     // Choose day
     // Pull value from day
     // Show calendar for day-end
