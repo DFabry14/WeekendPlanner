@@ -12,7 +12,7 @@ console.log("connected");
     };
     firebase.initializeApp(config);
 
-
+//get request to pull all users array of total users
         
     const txtEmail = document.getElementById('txtEmail');
     const txtPassword = document.getElementById('txtPassword');
