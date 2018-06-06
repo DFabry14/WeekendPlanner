@@ -181,3 +181,7 @@ button {
     background-color: #5C5E33;
 }
 
+.home {
+    background: url('../img/splash1.jpeg') no-repeat fixed;
+}
+
