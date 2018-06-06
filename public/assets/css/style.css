@@ -16,7 +16,7 @@ h5 {
     font-family: 'Gotham X Light', sans-serif;
 }
 
-/*****HEADER-NAV******/
+/***** HEader & Nav ******/
 
 .header-nav {
     display: inline-block;
@@ -34,14 +34,15 @@ h5 {
 }
 .login a {
     color: #fff;
+    text-decoration: none;
 }
 
-/*****JUMBOTRON*****/
+/***** Jumbotron *****/
 .jumbotron {
     /* background: #3E3E63; */
     background: url('../img/splash1.jpeg') no-repeat fixed;
     background-size: 100%;
-    height: 600px;
+    height: 100vh;
     margin-bottom: 0px;
     padding-top: 20px;
     border-radius: 0px;
@@ -114,7 +115,7 @@ button {
     border-radius: .1rem;
 }
 
-/*DATEPICKER/CALENDAR*/
+/****** Datepicker ******/
 .datepicker-1 {
     width: 300px;
 }
@@ -125,14 +126,18 @@ button {
 .ui-widget-header {
     background: #4C4C70;
 }
-/****** Event list ******/
 
+
+
+/****** Event list ******/
 .events {
-    background-color: #5C5E33;
+    background-color: #fff;
 }
 .eventList {
     float: left;
-    color: #fff;
+    color: #000;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .friday {
@@ -141,11 +146,15 @@ button {
 
 .eventHead {
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .scheduleHead {
     text-align: center;
-    color: #fff;
+    color: #000;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .card {
     margin: auto;
@@ -163,3 +172,14 @@ button {
     text-align: center;
 }
 
+.btn-danger {
+    border-radius: .1rem;
+}
+.saveButton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.saveButton button {
+    margin: 0 auto;
+}

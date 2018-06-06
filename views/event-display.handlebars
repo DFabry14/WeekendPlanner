@@ -1,128 +1,132 @@
-<div class="eventContainer">
-
-    <br>
-    <br>
-    <h1 class="eventHead">Events in your area:</h1>
-
-    <div class="col-md-12 eventOptions">
-        <div class="col-md-4 eventList">
-            <h3 class="friday days">Friday</h3>
-            <ul style="list-style-type:none">
-                {{!-- {{#each userEventFri}} {{#unless this.chosen}} --}}
-                <li>
-                    <div class="card">
-                        <div class="card-header">
-                            EVENT NAME
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Concert at The Metro</p>
-                        </div>
-                    </div>
-                    <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
-                </li>
-                {{!-- {{/unless}} {{/each}} --}}
-            </ul>
-        </div>
-        <div class="col-md-4 eventList">
-            <h3 class="days">Saturday</h3>
-            <ul style="list-style-type:none">
-                {{!-- {{#each userEventSat}} {{#unless this.chosen}}  --}}
-                <li>
-                    <div class="card">
-                        <div class="card-header">
-                            EVENT NAME
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Concert at The Metro</p>
-                        </div>
-                    </div>
-                    <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
-                </li>
-                {{!-- {{/unless}} {{/each}} --}}
-            </ul>
-        </div>
-        <div class="col-md-4 eventList">
-            <h3 class="days">Sunday</h3>
-            <ul style="list-style-type:none">
-                {{!-- {{#each userEventSun}} {{#unless this.chosen}}  --}}
-                <li>
-                    <div class="card">
-                        <div class="card-header">
-                            EVENT NAME
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Concert at The Metro</p>
-                        </div>
-                    </div>
-                    <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
-                </li>
-                {{!-- {{/unless}} {{/each}} --}}
-            </ul>
-        </div>
+<div class="row">
+    <div class="col-md-12 sectionHead">
+        <h2 class="eventHead">Events in your area:</h2>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div>
-        <h3 class="col-md-12 scheduleHead">Your schedule:</h3>
-        <div class="col-md-4 eventList">
-            <h3 class="friday days">Friday</h3>
-            <ul style="list-style-type:none">
-                {{!-- {{#each userEventFri}} {{#unless this.chosen}} --}}
-                <li>
-                    <div class="card">
-                        <div class="card-header">
-                            EVENT NAME
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Concert at The Metro</p>
-                        </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 eventList">
+        <h4 class="friday days">Friday</h4>
+        <ul style="list-style-type:none">
+            {{!-- {{#each userEventFri}} {{#unless this.chosen}} --}}
+            <li>
+                <div class="card">
+                    <div class="card-header">
+                        EVENT NAME
                     </div>
-                    <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
-                </li>
-                {{!-- {{/unless}} {{/each}} --}}
-            </ul>
-        </div>
-        <div class="col-md-4 eventList">
-            <h3 class="days">Saturday</h3>
-            <ul style="list-style-type:none">
-                {{!-- {{#each userEventSat}} {{#unless this.chosen}}  --}}
-                <li>
-                    <div class="card">
-                        <div class="card-header">
-                            EVENT NAME
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Concert at The Metro</p>
-                        </div>
+                    <div class="card-body">
+                        <p class="card-text">Concert at The Metro</p>
                     </div>
-                    <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
-                </li>
-                {{!-- {{/unless}} {{/each}} --}}
-            </ul>
-        </div>
-        <div class="col-md-4 eventList">
-            <h3 class="days">Sunday</h3>
-            <ul style="list-style-type:none">
-                {{!-- {{#each userEventSun}} {{#unless this.chosen}}  --}}
-                <li>
-                    <div class="card">
-                        <div class="card-header">
-                            EVENT NAME
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Concert at The Metro</p>
-                        </div>
+                </div>
+                <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
+            </li>
+            {{!-- {{/unless}} {{/each}} --}}
+        </ul>
+    </div>
+    <div class="col-md-4 eventList">
+        <h4 class="days">Saturday</h4>
+        <ul style="list-style-type:none">
+            {{!-- {{#each userEventSat}} {{#unless this.chosen}} --}}
+            <li>
+                <div class="card">
+                    <div class="card-header">
+                        EVENT NAME
                     </div>
-                    <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
-                </li>
-                {{!-- {{/unless}} {{/each}} --}}
-            </ul>
-        </div>
-        <br>
-        <br>
+                    <div class="card-body">
+                        <p class="card-text">Concert at The Metro</p>
+                    </div>
+                </div>
+                <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
+            </li>
+            {{!-- {{/unless}} {{/each}} --}}
+        </ul>
+    </div>
+    <div class="col-md-4 eventList">
+        <h4 class="days">Sunday</h4>
+        <ul style="list-style-type:none">
+            {{!-- {{#each userEventSun}} {{#unless this.chosen}} --}}
+            <li>
+                <div class="card">
+                    <div class="card-header">
+                        EVENT NAME
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Concert at The Metro</p>
+                    </div>
+                </div>
+                <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
+            </li>
+            {{!-- {{/unless}} {{/each}} --}}
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 sectionHead">
+        <h2 class="scheduleHead">Your Schedule:</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 eventList">
+        <h4 class="friday days">Friday</h4>
+        <ul style="list-style-type:none">
+            {{!-- {{#each userEventFri}} {{#unless this.chosen}} --}}
+            <li>
+                <div class="card">
+                    <div class="card-header">
+                        EVENT NAME
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Concert at The Metro</p>
+                    </div>
+                </div>
+                <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
+            </li>
+            {{!-- {{/unless}} {{/each}} --}}
+        </ul>
+    </div>
+    <div class="col-md-4 eventList">
+        <h4 class="days">Saturday</h4>
+        <ul style="list-style-type:none">
+            {{!-- {{#each userEventSat}} {{#unless this.chosen}} --}}
+            <li>
+                <div class="card">
+                    <div class="card-header">
+                        EVENT NAME
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Concert at The Metro</p>
+                    </div>
+                </div>
+                <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
+            </li>
+            {{!-- {{/unless}} {{/each}} --}}
+        </ul>
+    </div>
+    <div class="col-md-4 eventList">
+        <h4 class="days">Sunday</h4>
+        <ul style="list-style-type:none">
+            {{!-- {{#each userEventSun}} {{#unless this.chosen}} --}}
+            <li>
+                <div class="card">
+                    <div class="card-header">
+                        EVENT NAME
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Concert at The Metro</p>
+                    </div>
+                </div>
+                <button data-id="{{this.id}}" class="btn btn-danger chosen">Let's go!</button>
+            </li>
+            {{!-- {{/unless}} {{/each}} --}}
+        </ul>
+    </div>
+</div>
+
+<div class="row saveButton">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
         <button type="button" class="btn btn-primary btn-lg btn-block saveBtn" id="saveActivities">Save Activities!</button>
     </div>
-
+    <div class="col-md-4"></div>
 </div>
