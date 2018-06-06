@@ -17,8 +17,7 @@ h5 {
 }
 
 /*****HEADER-NAV******/
-header {
-}
+
 .header-nav {
     display: inline-block;
 }
@@ -42,9 +41,10 @@ header {
     /* background: #3E3E63; */
     background: url('../img/splash1.jpeg') no-repeat fixed;
     background-size: 100%;
-    height: 100vh;
+    height: 600px;
     margin-bottom: 0px;
     padding-top: 20px;
+    border-radius: 0px;
 }
 .logo-big {
     text-align: center;
@@ -109,43 +109,57 @@ button {
     background-color: #4C4C70;
 }
 
-/* Footer */
-footer{
-    background-color: #33383c;
-    padding:70px 0px;
-}	       
-
-footer ul li{
-   padding:5px 0px;
+.btn-light {
+    border: 0px;
+    border-radius: .1rem;
 }
 
-.adress span , .contact span , .social span{
-  color: #FFF; 
-  font-weight: 800; 
-  padding-bottom: 10px; 
-  margin-bottom: 20px;
-  display: block;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 3px;
+/*DATEPICKER/CALENDAR*/
+.datepicker-1 {
+    width: 300px;
+}
+.ui-corner-all {
+    border: none;
+    border-radius: 0px;
+}
+.ui-widget-header {
+    background: #4C4C70;
+}
+/****** Event list ******/
+
+.events {
+    background-color: #5C5E33;
+}
+.eventList {
+    float: left;
+    color: #fff;
 }
 
-.adress li p , .contact li a , .social li a{
-   color:#FFF;
-   letter-spacing: 2px;
-   text-decoration:none;
-   font-size:15px;
+.friday {
+    margin-left: 20%;
 }
 
-.social li{
-   float:left;
+.eventHead {
+    text-align: center;
 }
 
-.adress , .contact , .social {
-   list-style: none;
+.scheduleHead {
+    text-align: center;
+    color: #fff;
+}
+.card {
+    margin: auto;
 }
 
-/* ABOUT SECTION */
-.about-row {
-   padding: 100px 0; 
+.card-text {
+    color: black;
 }
+
+.card-header {
+    color: black;
+}
+
+.days {
+    text-align: center;
+}
+
