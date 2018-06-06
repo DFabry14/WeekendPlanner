@@ -1,0 +1,58 @@
+<div class="linkContainer">
+
+    <br>
+    <br>
+    <h1 class="eventHead">Your saved events:</h1>
+
+    <div class="col-md-12 eventOptions">
+        <div class="col-md-4 savedList">
+            <h3 class="friday days">Friday</h3>
+            <ul style="list-style-type:none">
+                {{#each userEventFri}}
+                <li>
+                    <div class="card text-white text-center bg-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">{{ title }} </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> {{ venue_name }} </h5>
+                            <button data-id="{{this.id}}" class="btn btn-danger chosen" href="{{ url }}" target="_blank">Click for tickets.</button>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-4 savedList">
+            <h3 class="days">Saturday</h3>
+            <ul style="list-style-type:none">
+                {{#each userEventSat}}
+                <li>
+                    <div class="card text-white text-center bg-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">{{ title }} </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> {{ venue_name }} </h5>
+                            <button data-id="{{this.id}}" class="btn btn-danger chosen" href="{{ url }}" target="_blank">Click for tickets.</button>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-4 savedList">
+            <h3 class="days">Sunday</h3>
+            <ul style="list-style-type:none">
+                {{#each userEventSun}}
+                <li>
+                    <div class="card text-white text-center bg-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">{{ title }} </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> {{ venue_name }} </h5>
+                            <button data-id="{{this.id}}" class="btn btn-danger chosen" href="{{ url }}" target="_blank">Click for tickets.</button>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+</div>

@@ -27,10 +27,18 @@ module.exports = function (app) {
         })
         .then(data => res.json(data)));
 
-    // For User model:
-    app.get('/api/users', (req, res) => db.User
-        .findAll({}).then(data => res.json(data)));
-    app.post('/api/users', (req, res) => db.User
-        .create(req.body).then(data => res.json(data)));
 
+    // For User model:
+   // app.get('/api/users', (req, res) => db.User
+       // .findAll({}).then(data => res.json(data)));
+    // app.post('/api/users', (req, res) => db.User
+        // .create(req.body).then(data => res.json(data)));
+
+
+    app.post('/api/getevents', function(req, res){
+        // Use AXIOS to make AJAX call to EVENTFUL API
+        // Get that evenful data
+        // Pass that eventful data that was returned to
+        // res.render
+    })
 };

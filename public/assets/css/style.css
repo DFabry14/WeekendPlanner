@@ -230,6 +230,7 @@ a.ui-state-default {
 .events {
     background-color: #fff;
 }
+
 .eventList {
     float: left;
     color: #000;
@@ -269,6 +270,7 @@ a.ui-state-default {
     text-align: center;
 }
 
+
 .btn-danger {
     border-radius: .1rem;
 }
@@ -279,4 +281,21 @@ a.ui-state-default {
 
 .saveButton button {
     margin: 0 auto;
+}
+
+/***** Saved Events ******/
+
+.linkContainer {
+    background-color: #5C5E33;
+}
+
+.savedList {
+    float: left;
+    background-color: #5C5E33;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.eventOptions {
+    background-color: #5C5E33;
 }
