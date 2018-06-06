@@ -130,6 +130,7 @@ button {
 .events {
     background-color: #5C5E33;
 }
+
 .eventList {
     float: left;
     color: #fff;
@@ -161,5 +162,22 @@ button {
 
 .days {
     text-align: center;
+}
+
+/***** Saved Events ******/
+
+.linkContainer {
+    background-color: #5C5E33;
+}
+
+.savedList {
+    float: left;
+    background-color: #5C5E33;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.eventOptions {
+    background-color: #5C5E33;
 }
 
