@@ -2,7 +2,8 @@
 $(document).ready(function() {
 
   console.log("connected");
-  // ***** CALENDAR ***** //
+
+  // ***** jQuery Datepicker ***** //
   var dayStartBtn = $("#day-start");
   var dayEndBtn = $("#day-end");
   var datePicker1 = $(".datepicker-1");
@@ -14,8 +15,9 @@ $(document).ready(function() {
   dayStartBtn.on("click", function () {
     // Calendar shows up to default day
     console.log("clicked!");
-    datePicker1.slideDown("slow");
+    datePicker1.slideDown("fast");
     datePicker1.datepicker("show");
+  
     // Choose day
     // Pull value from day
     // Show calendar for day-end
