@@ -1,4 +1,5 @@
 (function () {
+console.log("connected");
 
     // Initialize Firebase
     var config = {
@@ -20,6 +21,8 @@
     const btnLogout = document.getElementById('btnLogout');
 
     btnLogin.addEventListener("click", e => {
+        console.log("Log in clicked");
+        
         const email = txtEmail.value;
         const pass = txtPassword.value;
         const auth = firebase.auth();
@@ -28,6 +31,8 @@
     });
 
     btnSignUp.addEventListener("click", e => {
+        console.log("sign up in clicked");
+        
         const email = txtEmail.value;
         const pass = txtPassword.value;
         const auth = firebase.auth();
