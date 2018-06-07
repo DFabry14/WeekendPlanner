@@ -50,7 +50,7 @@ console.log("connected");
             var trueUser = firebaseUser.email;
             console.log("tU=" , trueUser);
             localStorage.setItem("trueUser", trueUser);
-            var lsUser = text(localStorage.getItem("trueUser"));
+            var lsUser = localStorage.getItem("trueUser");
             console.log("lsUser = " , lsUser);
 
         } else {
