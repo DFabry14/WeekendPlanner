@@ -85,13 +85,12 @@
         );
     });
     $(".saveBtn").on("click", function () {
+        event.preventDefault();
         console.log("clicked!");
-        $.ajax(
-            "/api/getevents",
-            {
-            method: "GET"
-        }
-        ).then(function(data){
+        $.ajax({
+            method: "GET",
+            url: "/api/getevents"
+        }).then(function(data){
             console.log("back on click", data);
         })
     })
