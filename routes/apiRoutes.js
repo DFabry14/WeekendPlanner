@@ -2,6 +2,7 @@ const db = require("../models");
 
 module.exports = function (app) {
 
+    // For UserEvent model:
     app.get('/api/events', (req, res) => db.UserEvent
         .findAll({})
         .then(data => res.json(data)));
@@ -25,6 +26,13 @@ module.exports = function (app) {
             }
         })
         .then(data => res.json(data)));
+
+
+    // For User model:
+   // app.get('/api/users', (req, res) => db.User
+       // .findAll({}).then(data => res.json(data)));
+    // app.post('/api/users', (req, res) => db.User
+        // .create(req.body).then(data => res.json(data)));
 
 
     app.post('/api/getevents', function(req, res){
