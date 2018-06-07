@@ -10,8 +10,8 @@ $(document).ready(function () {
 
   $("#submit").on("click", function () {
     // event.preventDefault();
+    
     var API_KEY = "4W3gpS4HDcDQZrkP";
-
     var queryURL = "http://api.eventful.com/json/events/search?app_key=" + API_KEY + "&keywords=" + keyword + "&location=chicago&date=today&page_size=5";
     var proxy = "https://cors-anywhere.herokuapp.com/";
     $.ajax({
@@ -20,7 +20,7 @@ $(document).ready(function () {
       method: "GET"
     }).then(function (res) {
       var data = JSON.parse(res);
-      console.log("Fri", data);
+      // console.log("Fri", data);
       for (var i = 0; i < 5; i++) {
         var event = {
           venue: (data.events.event[i].venue_name),
@@ -43,7 +43,7 @@ $(document).ready(function () {
       method: "GET"
     }).then(function (res) {
       var data = JSON.parse(res);
-      console.log("Sat", data);
+      // console.log("Sat", data);
       for (var i = 0; i < 5; i++) {
         var event = {
           venue: (data.events.event[i].venue_name),
@@ -66,7 +66,7 @@ $(document).ready(function () {
       method: "GET"
     }).then(function (res) {
       var data = JSON.parse(res);
-      console.log("Sunday", data);
+      // console.log("Sunday", data);
       for (var i = 0; i < 5; i++) {
         var event = {
           venue: (data.events.event[i].venue_name),
@@ -77,10 +77,10 @@ $(document).ready(function () {
         eventsArraySun.push(event);
       };
       for (var j = 0; j < eventsArraySun.length; j++) {
-        console.log("SunLoop", eventsArraySun[j]);
+        // console.log("SunLoop", eventsArraySun[j]);
         $("#event-sunday-title" + [j]).text(eventsArraySun[j].title);
         $("#event-sunday-venue" + [j]).text(eventsArraySun[j].venue);
       };
-    });
+    })
   });
 });
