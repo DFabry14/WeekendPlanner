@@ -46,7 +46,7 @@ console.log("connected");
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser) {
-            console.log(firebaseUser);
+            console.log(`firebaseUSer.email=${firebaseUser.email}`);
         } else {
             console.log('not logged in');
         }
