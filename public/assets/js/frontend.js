@@ -93,6 +93,9 @@ $(document).ready(function () {
   var dayEndBtn = $("#day-end");
   var datePicker1 = $(".datepicker-1");
   var datePicker2 = $(".datepicker-2");
+
+  datePicker1.datepicker();
+  datePicker1.hide()
   
     dayStartBtn.on("click", function () {
     datePicker2.hide();
