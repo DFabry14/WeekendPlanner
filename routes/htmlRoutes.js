@@ -7,16 +7,16 @@ module.exports = function (app) {
         res.render("home");
     });
 
-    app.get("/events/:lsUser", function (req, res) {
-        var lsUser = localStorage.getItem("trueUser");
-        db.Student.findAll({
-            where: {
-                id: lsUser
-            }
-        }).then(function (data) {
-            console.log(data);
-            // res.render("links", )
-        });
+    // app.get("/events/:lsUser", function (req, res) {
+    //     var lsUser = localStorage.getItem("trueUser");
+    //     db.Student.findAll({
+    //         where: {
+    //             id: lsUser
+    //         }
+    //     }).then(function (data) {
+    //         console.log(data);
+    //         // res.render("links", )
+    //     });
 
         app.post("/api/savedevents", function (req, res) {
             console.log(req.body);
@@ -61,5 +61,4 @@ module.exports = function (app) {
             var proxy = "https://cors-anywhere.herokuapp.com/";
             return axios.get(queryURL)
         }
-    })
-}
+    }
