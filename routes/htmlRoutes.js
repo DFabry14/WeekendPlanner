@@ -52,17 +52,18 @@ module.exports = function (app) {
         return axios.get(queryURL)
     };
 
-    app.get("/api/getevents", function (req, res) {
+    app.get("/links/:lsUser", function (req, res) {
         console.log("BOOYAH");
-        var lsUser = localStorage.getItem("trueUser");
+        var lsUser = req.params.lsUser;
         console.log("user:", lsUser);
         db.UserEvent.findAll({
             where: {
                 eventTrueUser: lsUser
             }
         }).then(function (data) {
-            console.log(data);
-            // res.render("links", )
+            console.log("DATA FROM /API/GETEVENTS", data);
+            console.log("END DATA FROM /API/GETEVENTS");
+            res.render("links", {events: data});
         });
     });
 }
