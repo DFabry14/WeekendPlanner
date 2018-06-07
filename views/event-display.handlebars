@@ -86,10 +86,12 @@
     });
     $(".saveBtn").on("click", function () {
         console.log("clicked!");
-        $.ajax({
-            method: "GET",
-            url: "/api/getevents"
-        }).then(function(data){
+        $.ajax(
+            "/api/getevents",
+            {
+            method: "GET"
+        }
+        ).then(function(data){
             console.log("back on click", data);
         })
     })
