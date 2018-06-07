@@ -73,10 +73,20 @@
 
 <script>
     console.log("heyo");
-     $(".chosen").on("click", function () {
+    $(".chosen").on("click", function () {
         console.log("Clicked!");
         var lsUser = localStorage.getItem("trueUser");
         console.log("lsUser = ", lsUser);
+        let savedEvent = {
+            eventName: this.title,
+            eventDate: this.start_time,
+            eventTime: this.start_time,
+            eventURL: this.url,
+            eventCity: this.city_name,
+            eventTrueUser: lsUser
+        };
+        console.log(savedEvent);
 
+    })
     })
 </script>
