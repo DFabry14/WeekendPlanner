@@ -58,7 +58,7 @@ module.exports = function (app) {
         console.log("user:", lsUser);
         db.UserEvent.findAll({
             where: {
-                id: lsUser
+                eventTrueUser: lsUser
             }
         }).then(function (data) {
             console.log(data);
