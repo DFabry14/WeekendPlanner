@@ -8,193 +8,58 @@
     <div class="col-md-4 eventList">
         <h3 class="friday days">Friday</h3>
         <ul style="list-style-type:none">
+            {{#each fridayEvents}}
             <li>
                 <div class="card text-center">
                     <div class="card-header" id="event-friday-title0">
-
+                        {{ this.title }}
                     </div>
                     <div class="card-body">
                         <p class="card-text" id="event-friday-venue0"> </p>
+                        {{this.venue_name}}
                     </div>
                     <button class="btn btn-danger chosen">Let's go!</button>
                 </div>
             </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-friday-title1">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-friday-venue1"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-friday-title2">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-friday-venue2"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-friday-title3">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-friday-venue3"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-friday-title4">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-friday-venue4"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
+            <br> {{/each}}
         </ul>
     </div>
     <div class="col-md-4 eventList">
         <h3 class="days">Saturday</h3>
         <ul style="list-style-type:none">
+            {{#each saturdayEvents}}
             <li>
                 <div class="card text-center">
-                    <div class="card-header" id="event-saturday-title0">
-
+                    <div class="card-header" id="event-friday-title0">
+                        {{ this.title }}
                     </div>
                     <div class="card-body">
-                        <p class="card-text" id="event-saturday-venue0"> </p>
+                        <p class="card-text" id="event-friday-venue0"> </p>
+                        {{this.venue_name}}
                     </div>
                     <button class="btn btn-danger chosen">Let's go!</button>
                 </div>
             </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-saturday-title1">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-saturday-venue1"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-saturday-title2">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-saturday-venue2"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-saturday-title3">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-saturday-venue3"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-saturday-title4">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-saturday-venue4"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
+            <br> {{/each}}
         </ul>
     </div>
     <div class="col-md-4 eventList">
         <h3 class="days">Sunday</h3>
         <ul style="list-style-type:none">
+            {{#each sundayEvents}}
             <li>
                 <div class="card text-center">
-                    <div class="card-header" id="event-sunday-title0">
-
+                    <div class="card-header" id="event-friday-title0">
+                        {{ this.title }}
                     </div>
                     <div class="card-body">
-                        <p class="card-text" id="event-sunday-venue0"> </p>
+                        <p class="card-text" id="event-friday-venue0"> </p>
+                        {{this.venue_name}}
                     </div>
                     <button class="btn btn-danger chosen">Let's go!</button>
                 </div>
             </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-sunday-title1">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-sunday-venue1"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-sunday-title2">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-sunday-venue2"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-sunday-title3">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-sunday-venue3"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
-            <br>
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-sunday-title4">
-
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-sunday-venue4"> </p>
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
-                </div>
-            </li>
+            <br> {{/each}}
         </ul>
     </div>
 </div>
@@ -203,5 +68,5 @@
 
 
 <div class="row saveButton col-md-12">
-        <button type="button" class="btn btn-primary btn-lg btn-block saveBtn" id="saveActivities">Save Activities!</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block saveBtn" id="saveActivities">Save Activities!</button>
 </div>
