@@ -72,7 +72,7 @@
 </div>
 
 <script>
-    $(".chosen").on("click", function () {
+    $(document).on("click", ".chosen", function () {
         console.log("Clicked!");
         var lsUser = localStorage.getItem("trueUser");
            console.log("lsUser = " , lsUser);
