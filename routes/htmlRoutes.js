@@ -10,6 +10,11 @@ module.exports = function (app) {
         res.render("links");
     });
 
+    app.post("/api/savedevents", function(req, res){
+        console.log(req.body);
+        res.send(200).end();
+    })
+
     app.get("/events/:keyword", function (req, res) {
         var keyword = req.params.keyword;
         var friday = getNextDayOfWeek(new Date(), 5);
