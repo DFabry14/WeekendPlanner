@@ -24,6 +24,7 @@ module.exports = function (app) {
                 var eventObj = {
                     fridayEvents, saturdayEvents, sundayEvents
                 }
+                console.log(response[0].data.events.event);
                 res.render("event-display", eventObj);
             })
     });
