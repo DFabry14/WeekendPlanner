@@ -25,18 +25,15 @@
     <div class="col-md-4 eventList">
         <h3 class="days">Saturday</h3>
         <ul style="list-style-type:none">
-            {{#each saturdayEvents}}
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-friday-title0">
-                        {{ this.title }}
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-friday-venue0"> </p>
-                        {{this.venue_name}}
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
+            {{#each saturdayEvents}} li>
+            <div class="card text-center">
+                <div class="card-header" id="eventTitle-{{this.id}}">{{ this.title }}</div>
+                <div class="card-body">
+                    <p class="card-text" id="eventVenue-{{this.id}}">{{this.venue_name}}</p>
+
                 </div>
+                <button class="btn btn-danger chosen" data-id="{{this.id}}">Let's go!</button>
+            </div>
             </li>
             <br> {{/each}}
         </ul>
@@ -44,18 +41,15 @@
     <div class="col-md-4 eventList">
         <h3 class="days">Sunday</h3>
         <ul style="list-style-type:none">
-            {{#each sundayEvents}}
-            <li>
-                <div class="card text-center">
-                    <div class="card-header" id="event-friday-title0">
-                        {{ this.title }}
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text" id="event-friday-venue0"> </p>
-                        {{this.venue_name}}
-                    </div>
-                    <button class="btn btn-danger chosen">Let's go!</button>
+            {{#each sundayEvents}} li>
+            <div class="card text-center">
+                <div class="card-header" id="eventTitle-{{this.id}}">{{ this.title }}</div>
+                <div class="card-body">
+                    <p class="card-text" id="eventVenue-{{this.id}}">{{this.venue_name}}</p>
+
                 </div>
+                <button class="btn btn-danger chosen" data-id="{{this.id}}">Let's go!</button>
+            </div>
             </li>
             <br> {{/each}}
         </ul>
@@ -90,9 +84,8 @@
                 method: "POST",
                 data: savedEvent
             }
-        ).then(function(){
-            window.location.replace("/links");
+        ).then(function () {
+            console.log("back from db");
         })
-
     })
 </script>
