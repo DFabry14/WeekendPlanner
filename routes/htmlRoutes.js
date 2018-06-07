@@ -46,10 +46,4 @@ module.exports = function (app) {
         var proxy = "https://cors-anywhere.herokuapp.com/";
         return axios.get(queryURL)
     }
-    $(".chosen").on("click", function () {
-        console.log("Clicked!");
-        var lsUser = localStorage.getItem("trueUser");
-        console.log("lsUser = ", lsUser);
-
-    })
 }
