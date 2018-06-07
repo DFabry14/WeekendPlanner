@@ -1,5 +1,6 @@
 var path = require("path");
 var axios = require("axios");
+const db = require("../models");
 
 module.exports = function (app) {
     app.get("/", function (req, res) {
@@ -13,8 +14,8 @@ module.exports = function (app) {
     app.post("/api/savedevents", function(req, res){
         console.log(req.body);
         // Save to the DB
-        db.UserEvent.create(req.body)
-           .then(res => (res.send(200).end()))
+        db.UserEvent.create(req.body);
+        res.send(200).end();
     })
 
     app.get("/events/:keyword", function (req, res) {
