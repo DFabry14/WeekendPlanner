@@ -9,12 +9,9 @@
     <title>Planit</title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-    <!--Font Awesome CSS-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-        crossorigin="anonymous">
-    <!--jQuery UI Themes-->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-       <!--jQuery-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <!--Bootstrap jQuery-->
@@ -22,16 +19,9 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <!--jQuery UI library-->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-        crossorigin="anonymous"></script>
+
     <!--Custom Javascript-->
-
-    <script src="/assets/js/frontend.js"></script> {{!-- Firebase Form --}}
-
- 
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/frontend.js"></script>
 
 </head>
 
@@ -87,16 +77,15 @@
                         <br> in an organized fashion.</h5>
                 </div>
                 <div class="search-inputs">
-                    <div class="day-links">
-                        <a href="#" id="multiple-days">Multiple Days</a>
-                        <a href="#" id="one-day">One Day</a>
+                    <div class="location-caption">
+                        <a href="#" id="location-caption">Location</a>
                     </div>
                     <form action="/action_page">
                         <div class="form-group row">
                             <div class="col-3">
                                 <input class="form-control input-lg city" id="city" autocomplete='address-level2' placeholder="Chicago, IL" type="text">
                             </div>
-                            <div class="col-4">
+                            <div class="col-6">
                                 <input class="form-control input-lg event" id="event" placeholder="What do you want to do?" type="text">
                                 <input type="hidden">
                                 <div class="dropdown-menu categories">
@@ -151,12 +140,11 @@
         </div>
     </div>
 
-
- 
-
- <!-- Firebase  -->
+    <!-- Firebase  -->
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <!-- Firebase Form -->
     <script src="/assets/js/fbForm.js"></script>
+
 </body>
   
 </html>
