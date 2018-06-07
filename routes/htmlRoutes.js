@@ -10,6 +10,13 @@ module.exports = function (app) {
         res.render("links");
     });
 
+    app.post("/api/savedevents", function(req, res){
+        console.log(req.body);
+        // Save to the DB
+        db.UserEvent.create(req.body)
+           .then(res => (res.send(200).end()))
+    })
+
     app.get("/events/:keyword", function (req, res) {
         var keyword = req.params.keyword;
         var friday = getNextDayOfWeek(new Date(), 5);
@@ -24,6 +31,7 @@ module.exports = function (app) {
                 var eventObj = {
                     fridayEvents, saturdayEvents, sundayEvents
                 }
+                console.log(response[0].data.events.event);
                 res.render("event-display", eventObj);
             })
     });

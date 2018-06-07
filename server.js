@@ -5,6 +5,7 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 var db = require("./models");
 
+
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -15,6 +16,8 @@ app.set("view engine", "handlebars");
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+
+
 
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
