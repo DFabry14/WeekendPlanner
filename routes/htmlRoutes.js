@@ -54,8 +54,10 @@ module.exports = function (app) {
 
     app.get("/api/getevents", function (req, res) {
         console.log("BOOYAH");
+        
         var lsUser = localStorage.getItem("trueUser");
-        db.Student.findAll({
+        console.log("user:", lsUser);
+        db.UserEvent.findAll({
             where: {
                 id: lsUser
             }
