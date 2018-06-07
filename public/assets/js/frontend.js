@@ -93,6 +93,9 @@ $(document).ready(function () {
   var datePicker1 = $(".datepicker-1");
   var datePicker2 = $(".datepicker-2");
   
+  datePicker1.datepicker();
+  datePicker1.hide();
+  
     dayStartBtn.on("click", function () {
     datePicker2.hide();
     // Calendar shows up to default day
