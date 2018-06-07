@@ -87,8 +87,8 @@
     $(".saveBtn").on("click", function () {
         console.log("clicked!");
         $.ajax({
-            url: "/api/getevents",
             method: "GET",
+            url: "/api/getevents"
         }).then(function(data){
             console.log("back on click", data);
         })
