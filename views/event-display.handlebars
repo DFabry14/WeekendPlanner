@@ -87,14 +87,9 @@
     $(".saveBtn").on("click", function () {
         event.preventDefault();
         console.log("clicked!");
-        $.get("/api/getevents", function(data){
-            console.log(data)
-        })
-/*        $.ajax({
-            method: "GET",
-            url: "/api/getevents"
-        }).then(function(data){
-            console.log("back on click", data);
-        }) */
+        var lsUser = localStorage.getItem("trueUser"); 
+
+        window.location.href = "/links/" + lsUser;
+        
     })
 </script>
