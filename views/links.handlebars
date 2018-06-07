@@ -11,9 +11,9 @@
                 {{#each fridayEvents}}
                 <li>
                     <div class="card text-white text-center bg-success mb-3" style="max-width: 18rem;">
-                        <div class="card-header">{{ title }} </div>
+                        <div class="card-header">{{ this.title }} </div>
                         <div class="card-body">
-                            <h5 class="card-title"> {{ venue_name }} </h5>
+                            <h5 class="card-title"> {{ this.venue_name }} </h5>
                             <button data-id="{{this.id}}" class="btn btn-danger chosen" href="{{ this.url }}" target="_blank">Click for tickets.</button>
                         </div>
                     </div>

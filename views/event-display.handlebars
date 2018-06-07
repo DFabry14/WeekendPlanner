@@ -41,7 +41,7 @@
     <div class="col-md-4 eventList">
         <h3 class="days">Sunday</h3>
         <ul style="list-style-type:none">
-            {{#each sundayEvents}} 
+            {{#each sundayEvents}}
             <div class="card text-center">
                 <div class="card-header" id="eventTitle-{{this.id}}">{{ this.title }}</div>
                 <div class="card-body">
@@ -64,9 +64,7 @@
 </div>
 
 <script>
-    console.log("heyo");
     $(".chosen").on("click", function () {
-        console.log("Clicked!");
         var thisID = $(this).data("id");
         var eventTitle = $("#eventTitle-" + thisID).text();
         var eventVenue = $("#eventVenue-" + thisID).text();
@@ -84,8 +82,15 @@
                 method: "POST",
                 data: savedEvent
             }
-        ).then(function () {
-            console.log("back from db");
+        );
+    });
+    $(".saveBtn").on("click", function () {
+        console.log("clicked!");
+        $.ajax({
+            url: "/events",
+            method: "GET",
+        }).then(function(data){
+
         })
     })
 </script>
