@@ -9,12 +9,15 @@
 body {
     font-family: 'Gotham Book', sans-serif;
 }
-h1, h5 {
+h1, h2, h5 {
     color: #fff;
+}
+h2 {
+    font-size: 16px;
+    text-transform: uppercase;
 }
 h3 {
     font-size: 28px;
-}
 h5 {
     font-family: 'Gotham X Light', sans-serif;
 }
@@ -41,8 +44,13 @@ h5 {
 }
 
 /***** Modal *****/
+.modal-header {
+    background: #4C4C70;
+    color: #fff;
+}
 .modal-header .close {
     width: 50px;
+    color: #fff;
 }
 .modal-body input {
     color: #000;
@@ -74,11 +82,15 @@ h5 {
     text-align: center;
     margin-bottom: 100px;
 }
-.location-caption{
+.captions{
     font-size: 12px;
     margin-bottom: 5px;
 }
-.location-caption a {
+.error-input {
+    color: #ef5350;
+    margin-left: -10px;
+}
+.captions a {
     color: #fff;
     margin-right: 10px;
     text-decoration: none;
@@ -131,7 +143,6 @@ button {
     border-radius: .1rem;
 }
 
-
 /****** Event list ******/
 .events {
     background-color: #fff;
@@ -183,10 +194,12 @@ button {
 .saveButton {
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 150px;
 }
 
 .saveButton button {
     margin: 0 auto;
+    width: 300px;
 }
 
 /***** Saved Events ******/
@@ -202,6 +215,27 @@ button {
     margin-bottom: 50px;
 }
 
-.eventOptions {
-    background-color: #5C5E33;
+
+/***** Footer *****/
+footer {
+    height: 200px;
+    background: #4C4C70;
+}
+footer h2 {
+    padding-top: 30px;
+}
+.social-media i {
+    margin-right: 15px;
+}
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+}
+footer p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.powered-by i {
+    margin: 0 auto;
 }

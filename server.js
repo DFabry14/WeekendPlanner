@@ -21,7 +21,7 @@ require("./routes/htmlRoutes")(app);
 
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
-    db.sequelize.sync( { force: true } ).then(function () {
+    db.sequelize.sync().then(function () {
         console.log("Database is connected!");
 
     });
