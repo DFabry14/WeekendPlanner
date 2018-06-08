@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" id="scrollTarget">
     <div class="col-md-12 sectionHead">
         <h2 class="eventHead">Events in your area:</h2>
     </div>
@@ -41,7 +41,7 @@
     <div class="col-md-4 eventList">
         <h3 class="days">Sunday</h3>
         <ul style="list-style-type:none">
-            {{#each sundayEvents}} 
+            {{#each sundayEvents}}
             <div class="card text-center">
                 <div class="card-header" id="eventTitle-{{this.id}}">{{ this.title }}</div>
                 <div class="card-body">
@@ -65,6 +65,15 @@
 
 <script>
     console.log("heyo");
+    // Smooth sccroll to Events Function
+    var target = $("#scrollTarget");
+    setTimeout(function () {
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }, 500)
+    // end scroll function
+
     $(".chosen").on("click", function () {
         console.log("Clicked!");
         var thisID = $(this).data("id");
