@@ -7,16 +7,13 @@ module.exports = function (app) {
         res.render("home");
     });
 
-    app.get("/links", function (req, res) {
-        res.render("links");
-    });
 
-    app.post("/api/savedevents", function(req, res){
+    app.post("/api/savedevents", function (req, res) {
         console.log(req.body);
         // Save to the DB
         db.UserEvent.create(req.body);
         res.send(200).end();
-    })
+    });
 
     app.get("/events/:keyword", function (req, res) {
         var keyword = req.params.keyword;
@@ -46,12 +43,27 @@ module.exports = function (app) {
         resultDate = JSON.stringify(resultDate).replace(/[-]/g, "").slice(1, 9) + "00";
         return resultDate + "-" + resultDate;
         // Eventful wants the date in this format: https://api.eventful.com/docs/events/search
-    }
+    };
 
     function queryEventfulAPI(keyword, date) {
         var API_KEY = "4W3gpS4HDcDQZrkP";
         var queryURL = "http://api.eventful.com/json/events/search?app_key=" + API_KEY + "&keywords=" + keyword + "&location=chicago&date=" + date + "&page_size=10";
         var proxy = "https://cors-anywhere.herokuapp.com/";
         return axios.get(queryURL)
-    }
+    };
+
+    app.get("/links/:lsUser", function (req, res) {
+        console.log("BOOYAH");
+        var lsUser = req.params.lsUser;
+        console.log("user:", lsUser);
+        db.UserEvent.findAll({
+            where: {
+                eventTrueUser: lsUser
+            }
+        }).then(function (data) {
+            console.log("DATA FROM /API/GETEVENTS", data);
+            console.log("END DATA FROM /API/GETEVENTS");
+            res.render("links", {events: data});
+        });
+    });
 }
