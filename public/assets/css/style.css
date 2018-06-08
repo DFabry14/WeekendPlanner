@@ -206,12 +206,12 @@ button {
 /***** Saved Events ******/
 
 .linkContainer {
-    background-color: #5C5E33;
+    background-color: #fff;
 }
 
 .savedList {
     float: left;
-    background-color: #5C5E33;
+    background-color: #fff;
     color: #fff;
     margin-bottom: 50px;
 }
