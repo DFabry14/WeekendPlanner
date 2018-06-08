@@ -12,6 +12,9 @@ body {
 h1, h5 {
     color: #fff;
 }
+h3 {
+    font-size: 28px;
+}
 h5 {
     font-family: 'Gotham X Light', sans-serif;
 }
