@@ -43,6 +43,7 @@ console.log("connected");
     btnLogout.addEventListener("click", e =>{
         firebase.auth().signOut();
         localStorage.clear();
+        
     });
  
    

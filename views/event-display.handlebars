@@ -14,8 +14,9 @@
                     <div class="card-header" id="eventTitle-{{this.id}}">{{ this.title }}</div>
                     <div class="card-body">
                         <p class="card-text" id="eventVenue-{{this.id}}">{{this.venue_name}}</p>
-
+                        <p class="card-text" id="eventURL-{{this.id}}">{{this.url}}</p>
                     </div>
+
                     <button class="btn btn-danger chosen" data-id="{{this.id}}">Let's go!</button>
                 </div>
             </li>
@@ -30,6 +31,7 @@
                 <div class="card-header" id="eventTitle-{{this.id}}">{{ this.title }}</div>
                 <div class="card-body">
                     <p class="card-text" id="eventVenue-{{this.id}}">{{this.venue_name}}</p>
+                    <p class="card-text" id="eventURL-{{this.id}}">{{this.url}}</p>
 
                 </div>
                 <button class="btn btn-danger chosen" data-id="{{this.id}}">Let's go!</button>
@@ -46,6 +48,7 @@
                 <div class="card-header" id="eventTitle-{{this.id}}">{{ this.title }}</div>
                 <div class="card-body">
                     <p class="card-text" id="eventVenue-{{this.id}}">{{this.venue_name}}</p>
+                    <p class="card-text" id="eventURL-{{this.id}}">{{this.url}}</p>
 
                 </div>
                 <button class="btn btn-danger chosen" data-id="{{this.id}}">Let's go!</button>
@@ -64,6 +67,7 @@
 </div>
 
 <script>
+<<<<<<< HEAD
     console.log("heyo");
     // Smooth sccroll to Events Function
     var target = $("#scrollTarget");
@@ -74,16 +78,19 @@
     }, 500)
     // end scroll function
 
+=======
+>>>>>>> 6c858ba4732b28e45e05ecb1681ebc1945f957f9
     $(".chosen").on("click", function () {
-        console.log("Clicked!");
         var thisID = $(this).data("id");
         var eventTitle = $("#eventTitle-" + thisID).text();
         var eventVenue = $("#eventVenue-" + thisID).text();
+        var eventURL = $("#eventURL-" + thisID).text();
         var lsUser = localStorage.getItem("trueUser");
         console.log("lsUser = ", lsUser);
         var savedEvent = {
             eventName: eventTitle,
             eventCity: eventVenue,
+            eventURL: eventURL,
             eventTrueUser: lsUser
         };
         console.log(savedEvent);
@@ -93,8 +100,14 @@
                 method: "POST",
                 data: savedEvent
             }
-        ).then(function () {
-            console.log("back from db");
-        })
+        );
+    });
+    $(".saveBtn").on("click", function () {
+        event.preventDefault();
+        console.log("clicked!");
+        var lsUser = localStorage.getItem("trueUser"); 
+
+        window.location.href = "/links/" + lsUser;
+        
     })
 </script>

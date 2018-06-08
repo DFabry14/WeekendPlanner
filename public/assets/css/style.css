@@ -9,8 +9,12 @@
 body {
     font-family: 'Gotham Book', sans-serif;
 }
-h1, h5 {
+h1, h2, h5 {
     color: #fff;
+}
+h2 {
+    font-size: 16px;
+    text-transform: uppercase;
 }
 h5 {
     font-family: 'Gotham X Light', sans-serif;
@@ -188,10 +192,12 @@ button {
 .saveButton {
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 150px;
 }
 
 .saveButton button {
     margin: 0 auto;
+    width: 300px;
 }
 
 /***** Saved Events ******/
@@ -205,4 +211,29 @@ button {
     background-color: #5C5E33;
     color: #fff;
     margin-bottom: 50px;
+}
+
+
+/***** Footer *****/
+footer {
+    height: 200px;
+    background: #4C4C70;
+}
+footer h2 {
+    padding-top: 30px;
+}
+.social-media i {
+    margin-right: 15px;
+}
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+}
+footer p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.powered-by i {
+    margin: 0 auto;
 }
